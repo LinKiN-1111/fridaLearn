@@ -7,6 +7,8 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
+    private String total = "hello";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     String fun(String x){return x.toLowerCase();}
 
     void secret(){
+        total += " secretFunc";
         Log.d("test","this is secret func");
     }
 
