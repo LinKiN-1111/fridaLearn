@@ -3,6 +3,7 @@ package com.linkin.demo2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,11 +19,13 @@ public class MainActivity extends AppCompatActivity {
             }
 
             fun(50,30);
+            Log.d("test",fun("LoWeRcAsE Me!!!!!!"));
         }
     }
 
     private void fun(int x,int y){
         android.util.Log.d("test",String.valueOf(x+y));
     }
+    private String fun(String x){return x.toLowerCase();}
 
 }
