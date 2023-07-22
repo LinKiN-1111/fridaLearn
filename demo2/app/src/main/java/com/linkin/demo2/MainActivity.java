@@ -23,9 +23,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void fun(int x,int y){
+    void fun(int x,int y){
         android.util.Log.d("test",String.valueOf(x+y));
     }
-    private String fun(String x){return x.toLowerCase();}
+    String fun(String x){return x.toLowerCase();}
+
+    void secret(){
+        Log.d("test","this is secret func");
+    }
+
+    static  void staticSecret(){
+        Log.d("test","this is static secret func");
+    }
 
 }
